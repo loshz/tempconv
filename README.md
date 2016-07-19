@@ -4,22 +4,23 @@ A simple package that allows the conversion from Celsius to Fahrenheit and vice-
 
 ## Usage
 
-The package currently supports two different temperature scales: `Celsius` and `Fahrenheit`
+The package currently supports three different temperature scales: `Celsius`, `Fahrenheit` and `Kelvin`
 
 Simply call a specific conversion function and pass the correct scale:
 
 ```
-fahrenheit := converter.CelsiusToFahrenheit(20) // 68
-celsius := converter.FahrenheitToCelsius(55) // 12.8
+converter.CelsiusToFahrenheit(20) // 68
+converter.CelsiusToKelvin(30) // 303.2
+converter.FahrenheitToCelsius(55) // 12.8
+converter.FahrenheitToKelvin(50) // 283.2
+converter.KelvinToCelsius(300) // 26.9
+converter.KelvinToFahrenheit(300) // 80.3
 ```
 
-Additionally, you can call the `String()` function to return a formatted version:
+Each type also implements the `String()` method which returns a formatted temperature:
 
 ```
-celsius := converter.Celsius(12).String() // 12°C
-fahrenheit := converter.Fahrenheit(55).String() // 55°F
+fmt.Sprintf("%s", converter.Celsius(12)) // 12°C
+fmt.Sprintf("%s", converter.Fahrenheit(55)) // 55°F
+fmt.Sprintf("%s", converter.Kelvin(300)) // 300K
 ```
-
-## To-Do
-
-- Add Kelvin conversion
