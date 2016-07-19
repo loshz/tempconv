@@ -34,8 +34,7 @@ func FahrenheitToCelsius(f Fahrenheit) Celsius {
 func round(val float64) float64 {
 	var round float64
 	digit := 10 * val
-	_, div := math.Modf(digit)
-	if div >= 0.5 {
+	if _, div := math.Modf(digit); div >= 0.5 {
 		round = math.Ceil(digit)
 	} else {
 		round = math.Floor(digit)
