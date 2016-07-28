@@ -1,10 +1,8 @@
 # Temperature [![Build Status](https://travis-ci.org/danbondd/temperature.svg?branch=master)](https://travis-ci.org/danbondd/temperature)
 
-A simple package that allows the conversion from Celsius to Fahrenheit and vice-versa.
+A simple package that allows the conversion between different temperature scales: `Celsius`, `Fahrenheit` and `Kelvin`.
 
 ## Usage
-
-The package currently supports three different temperature scales: `Celsius`, `Fahrenheit` and `Kelvin`
 
 Simply call a specific conversion function and pass the correct scale:
 
