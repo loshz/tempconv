@@ -1,14 +1,14 @@
-package converter_test
+package tempconv_test
 
 import (
 	"fmt"
 	"testing"
 
-	"github.com/danbondd/temperature/converter"
+	"github.com/danbondd/temperature/tempconv"
 )
 
 func TestCelsiusToFahrenheit(t *testing.T) {
-	fahrenheit := converter.CelsiusToFahrenheit(20)
+	fahrenheit := tempconv.CelsiusToFahrenheit(20)
 
 	if fahrenheit != 68 {
 		t.Errorf("expected 68, got: %f", fahrenheit)
@@ -16,7 +16,7 @@ func TestCelsiusToFahrenheit(t *testing.T) {
 }
 
 func TestCelsiusToKelvin(t *testing.T) {
-	kelvin := converter.CelsiusToKelvin(30)
+	kelvin := tempconv.CelsiusToKelvin(30)
 
 	if kelvin != 303.2 {
 		t.Errorf("expected 303.2, got: %f", kelvin)
@@ -24,7 +24,7 @@ func TestCelsiusToKelvin(t *testing.T) {
 }
 
 func TestFahrenheitToCelsius(t *testing.T) {
-	celsius := converter.FahrenheitToCelsius(55)
+	celsius := tempconv.FahrenheitToCelsius(55)
 
 	if celsius != 12.8 {
 		t.Errorf("expected 12.8, got: %f", celsius)
@@ -32,7 +32,7 @@ func TestFahrenheitToCelsius(t *testing.T) {
 }
 
 func TestFahrenheitToKelvin(t *testing.T) {
-	kelvin := converter.FahrenheitToKelvin(50)
+	kelvin := tempconv.FahrenheitToKelvin(50)
 
 	if kelvin != 283.2 {
 		t.Errorf("expected 283.2, got: %f", kelvin)
@@ -40,7 +40,7 @@ func TestFahrenheitToKelvin(t *testing.T) {
 }
 
 func TestKelvinToCelsius(t *testing.T) {
-	celsius := converter.KelvinToCelcius(300)
+	celsius := tempconv.KelvinToCelcius(300)
 
 	if celsius != 26.9 {
 		t.Errorf("expected 26.9, got: %f", celsius)
@@ -48,7 +48,7 @@ func TestKelvinToCelsius(t *testing.T) {
 }
 
 func TestKelvinToFahrenheit(t *testing.T) {
-	fahrenheit := converter.KelvinToFahrenheit(300)
+	fahrenheit := tempconv.KelvinToFahrenheit(300)
 
 	if fahrenheit != 80.3 {
 		t.Errorf("expected 80.3, got: %f", fahrenheit)
@@ -56,7 +56,7 @@ func TestKelvinToFahrenheit(t *testing.T) {
 }
 
 func TestCelsiusToString(t *testing.T) {
-	celsius := fmt.Sprintf("%s", converter.Celsius(12))
+	celsius := fmt.Sprintf("%s", tempconv.Celsius(12))
 
 	if celsius != "12°C" {
 		t.Errorf("expected 12°C, got: %s", celsius)
@@ -64,7 +64,7 @@ func TestCelsiusToString(t *testing.T) {
 }
 
 func TestFahrenheitToString(t *testing.T) {
-	fahrenheit := fmt.Sprintf("%s", converter.Fahrenheit(55))
+	fahrenheit := fmt.Sprintf("%s", tempconv.Fahrenheit(55))
 
 	if fahrenheit != "55°F" {
 		t.Errorf("expected 55°F, got: %s", fahrenheit)
@@ -72,7 +72,7 @@ func TestFahrenheitToString(t *testing.T) {
 }
 
 func TestKelvinToString(t *testing.T) {
-	kelvin := fmt.Sprintf("%s", converter.Kelvin(300))
+	kelvin := fmt.Sprintf("%s", tempconv.Kelvin(300))
 
 	if kelvin != "300K" {
 		t.Errorf("expected 300K, got: %s", kelvin)
