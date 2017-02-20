@@ -4,4 +4,4 @@ go:
 - 1.8.x
 script: go test ./... -cover
 notifications:
-  emails: false
+  email: false
