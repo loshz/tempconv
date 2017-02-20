@@ -1,8 +1,8 @@
 language: go
 go:
-- 1.7
-script: make test
+- 1.7.x
+- 1.8.x
+- tip
+script: go test ./... -cover
 notifications:
   emails: false
-  slack:
-    secure: u30mXILl3BSIbVIjWW8qj4n6iVewbtmoS4g1bj2NV6kvSJzduJYDdLaJ/V3BwzKm8RlEBmbFi0RmFJsJZfJ2QRKfIu3bpmWe07nrwtXbtOVIM+i3iyxFK+5ieodrPs4r9J7L6m5ICy2weMoI91yTRZufpWsODvZZRK1lBSYhklLZ+HZYezdFj5KdHqEAfmQU3Q/UjSb1XQRgW/fnemGw9M6aDKuJ1cf+vfKmAOQR21DOotWXlVVippbbkF9I0CRPW8DmqIWBHS4Aqghqsgc9EfL1hHkAF3xishD11oidyYbi/5GBEh9LTl06VZsqEl47GcfpEOo9GactuEXRwLvymaR5zNQkmj5YVKiIrg2eMrnC7Fj4xDJPQSctjmdDaAiM+SgzQPZSxYvUsp60r2pmrVIBWArepjHmWg9lqCC4MPqEXPbK4ptJJsCXLDg5TS0x1cEOr9XBv5NG6IecyAcuh74e0xw1OFoSfTE/zs0KPzbMeyMvjCy1GGApfe/3r5XEbCySqTihlF3mo9b8eD35RPbADU22L9VnGAiGNypoxF4kVqjB5fBjLV5Ib3V5uPDleGzzbsgZJ4UncbHg/HWqz1knZ/ITQ9d3uZWeUGB0kneDpJwJluPbTV6gD9lZluaGLtz13xRqVHS2ZYWYle+LZ8UXG0MPL5CRJa00/kOiA3A=

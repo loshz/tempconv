@@ -5,14 +5,14 @@ import (
 	"math"
 )
 
-// Celsius is a scale and unit of measurement for temperature.
-type Celsius float64
-
-// Fahrenheit is a scale and unit of measurement for temperature.
-type Fahrenheit float64
-
-// Kelvin is a scale and unit of measurement for temperature.
-type Kelvin float64
+type (
+	// Celsius is a scale and unit of measurement for temperature.
+	Celsius float64
+	// Fahrenheit is a scale and unit of measurement for temperature.
+	Fahrenheit float64
+	// Kelvin is a scale and unit of measurement for temperature.
+	Kelvin float64
+)
 
 const (
 	absoluteZeroC = 273.15
