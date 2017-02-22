@@ -7,12 +7,12 @@ A simple package that performs the conversion of different temperature scales: `
 Simply call a specific conversion function and pass the correct scale:
 
 ```
-tempconv.CelsiusToFahrenheit(20) // 68
-tempconv.CelsiusToKelvin(30) // 303.2
-tempconv.FahrenheitToCelsius(55) // 12.8
-tempconv.FahrenheitToKelvin(50) // 283.2
-tempconv.KelvinToCelsius(300) // 26.9
-tempconv.KelvinToFahrenheit(300) // 80.3
+CelsiusToFahrenheit(20) // 68
+CelsiusToKelvin(30) // 303.2
+FahrenheitToCelsius(55) // 12.8
+FahrenheitToKelvin(50) // 283.2
+KelvinToCelsius(300) // 26.9
+KelvinToFahrenheit(300) // 80.3
 ```
 
 Each type also implements the `String()` method which returns a formatted temperature:
