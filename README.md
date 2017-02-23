@@ -1,4 +1,4 @@
-# Temperature [![Build Status](https://travis-ci.org/danbondd/tempconv.svg?branch=master)](https://travis-ci.org/danbondd/tempconv)
+# tempconv [![Build Status](https://travis-ci.org/danbondd/tempconv.svg?branch=master)](https://travis-ci.org/danbondd/tempconv)
 
 A simple package that performs the conversion of different temperature scales: `Celsius`, `Fahrenheit` and `Kelvin`.
 
