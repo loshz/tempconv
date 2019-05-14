@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/danbondd/tempconv"
+	"github.com/syscll/tempconv"
 )
 
 func TestCelsius(t *testing.T) {
