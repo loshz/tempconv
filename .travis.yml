@@ -1,7 +1,13 @@
 language: go
+arch: amd64 
+os: linux
+dist: focal
 go:
 - 1.11.x
 - 1.12.x
-script: go test ./... -cover
+- 1.13.x
+- 1.14.x
+- 1.15.x
+script: go test -v ./...
 notifications:
   email: false
