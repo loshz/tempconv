@@ -8,7 +8,11 @@ import (
 )
 
 func TestCelsius(t *testing.T) {
+	t.Parallel()
+
 	t.Run("TestCelsiusToFahrenheit", func(t *testing.T) {
+		t.Parallel()
+
 		fahrenheit := tempconv.CelsiusToFahrenheit(20)
 
 		if fahrenheit != 68 {
@@ -17,6 +21,8 @@ func TestCelsius(t *testing.T) {
 	})
 
 	t.Run("TestCelsiusToKelvin", func(t *testing.T) {
+		t.Parallel()
+
 		kelvin := tempconv.CelsiusToKelvin(30)
 
 		if kelvin != 303.2 {
@@ -25,6 +31,8 @@ func TestCelsius(t *testing.T) {
 	})
 
 	t.Run("TestCelsiusToString", func(t *testing.T) {
+		t.Parallel()
+
 		celsius := fmt.Sprintf("%s", tempconv.Celsius(12))
 
 		if celsius != "12°C" {
@@ -34,6 +42,8 @@ func TestCelsius(t *testing.T) {
 }
 
 func TestFahrenheit(t *testing.T) {
+	t.Parallel()
+
 	t.Run("TestFahrenheitToCelsius", func(t *testing.T) {
 		celsius := tempconv.FahrenheitToCelsius(55)
 
@@ -43,6 +53,8 @@ func TestFahrenheit(t *testing.T) {
 	})
 
 	t.Run("TestFahrenheitToKelvin", func(t *testing.T) {
+		t.Parallel()
+
 		kelvin := tempconv.FahrenheitToKelvin(50)
 
 		if kelvin != 283.2 {
@@ -51,6 +63,8 @@ func TestFahrenheit(t *testing.T) {
 	})
 
 	t.Run("TestFahrenheitToString", func(t *testing.T) {
+		t.Parallel()
+
 		fahrenheit := fmt.Sprintf("%s", tempconv.Fahrenheit(55))
 
 		if fahrenheit != "55°F" {
@@ -60,7 +74,11 @@ func TestFahrenheit(t *testing.T) {
 }
 
 func TestKelvin(t *testing.T) {
+	t.Parallel()
+
 	t.Run("TestKelvinToCelsius", func(t *testing.T) {
+		t.Parallel()
+
 		celsius := tempconv.KelvinToCelcius(300)
 
 		if celsius != 26.9 {
@@ -69,6 +87,8 @@ func TestKelvin(t *testing.T) {
 	})
 
 	t.Run("TestKelvinToFahrenheit", func(t *testing.T) {
+		t.Parallel()
+
 		fahrenheit := tempconv.KelvinToFahrenheit(300)
 
 		if fahrenheit != 80.3 {
@@ -77,6 +97,8 @@ func TestKelvin(t *testing.T) {
 	})
 
 	t.Run("TestKelvinToString", func(t *testing.T) {
+		t.Parallel()
+
 		kelvin := fmt.Sprintf("%s", tempconv.Kelvin(300))
 
 		if kelvin != "300K" {

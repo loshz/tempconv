@@ -69,12 +69,5 @@ func KelvinToFahrenheit(k Kelvin) Fahrenheit {
 
 // Round a value to 1 decimal place.
 func round(val float64) float64 {
-	var round float64
-	digit := 10 * val
-	if _, div := math.Modf(digit); div >= 0.5 {
-		round = math.Ceil(digit)
-	} else {
-		round = math.Floor(digit)
-	}
-	return round / 10
+	return math.Round(val*10) / 10
 }
