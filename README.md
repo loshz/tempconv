@@ -1,4 +1,4 @@
-# tempconv [![Build Status](https://travis-ci.org/syscll/tempconv.svg?branch=master)](https://travis-ci.org/syscll/tempconv)
+# tempconv [![Build Status](https://github.com/syscll/tempconv/workflows/build/badge.svg)](https://github.com/syscll/tempconv/actions)
 
 A simple package that performs the conversion of different temperature scales: `Celsius`, `Fahrenheit` and `Kelvin`.
 
